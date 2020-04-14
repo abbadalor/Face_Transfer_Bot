@@ -3,6 +3,8 @@
 This is a bot that will take two videos of people and a title and use DeepFaceLab 2.0 to create a deepfake of the two videos and upload it
 to https://www.youtube.com/channel/UC-AgGSZd0D57RC1UJuncTZA.
 
+This project works by contacting my ssh server on my computer and uploading the video files and then launching a script that makes the DeepFake. The script works by using a version of DeepFaceLab 2.0 that I modified to be able to be used purely by a single batch file without any manual inputs, It also automatically removes blurry, dark, and too rotated images from the video to be used in the model. After the video is created it is uploaded to a youtube channel using Youtube:s Data API.
+
 ## Usage
 To use this bot you need to download the **sshconnect.py** file from this repository and put it in a folder with 
 another folder labeled videos like this:
