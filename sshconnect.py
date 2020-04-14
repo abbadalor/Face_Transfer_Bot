@@ -1,6 +1,5 @@
 import paramiko
 from scp import SCPClient
-import time
 
 title = input("Choose title for the video > ")
 
